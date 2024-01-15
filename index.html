@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="description-container" id="description-container">
+  <h1>Welcome to the Quiz App</h1>
+  <p>This is a HTML  quiz game. Click the button below to start the quiz!</p>
+  <button onclick="startQuiz()">Start Quiz</button>
+</div>
+
+<div class="quiz-container" id="quiz-container">
+  <h1 style="color: white; background-color: #060505; padding: 5px; border-radius: 10px; font-size: 25px;">Quiz App</h1>
+
+  <div id="question" class="question"></div>
+
+  <div class="options" id="options"></div>
+
+
+  <button onclick="submitAnswer()">Submit Answer</button>
+  <button onclick="resetGame()">Reset Game</button>
+
+  <div id="result" class="result"></div>
+</div>
+
+<div class="popup" id="popup">
+  <p id="popup-message"></p>
+  <button onclick="returnToDescription()">Return to Description Page</button>
+</div>
+
+<script src="script.js"> </script>
+
+</body>
+</html>
